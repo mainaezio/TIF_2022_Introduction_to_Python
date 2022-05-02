@@ -6,13 +6,11 @@ del primo anno del Corso di Laurea in Fisica dell'Università di Torino nell'Ann
 
 Il corso si pone l'obiettivo di familiarizzare gli studenti con l'uso del linguaggio Python e con le principali librerie utilizzate in ambito scientifico: Numpy, Scipy e Matplotlib.
 
-I notebooks Jupyter delle lezioni sono disponibili su: [http://personalpages.to.infn.it/~maina/didattica/TIF_2022](http://personalpages.to.infn.it/~maina/didattica/TIF_2022)
+I notebooks Jupyter delle lezioni sono disponibili anche su: [http://personalpages.to.infn.it/~maina/didattica/TIF_2022](http://personalpages.to.infn.it/~maina/didattica/TIF_2022)
 
 - in formato html (sola lettura)
 
 - in formato ipynb (eseguibili)
-
-Il corso prende pesantemente a prestito dal corso di [Hans Fanghor](https://www.southampton.ac.uk/~fangohr/teaching/python/book.html) dell'Università di Southampton.
 
 Programma
 ---------
