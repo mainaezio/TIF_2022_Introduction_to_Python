@@ -14579,7 +14579,7 @@ body[data-format='mobile'] .jp-OutputArea-child .jp-OutputArea-output {
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h2 id="Nozioni-fondamentali">Nozioni fondamentali<a class="anchor-link" href="#Nozioni-fondamentali">&#182;</a></h2><p>Potete trovare una eccellente introduzione a Matplotlib nella Sezione 5 di<br/> 
+<H1 style="font-size:50px">8: Grafici</H1><h2 id="8.1-Nozioni-fondamentali">8.1 Nozioni fondamentali<a class="anchor-link" href="#8.1-Nozioni-fondamentali">&#182;</a></h2><p>Potete trovare una eccellente introduzione a Matplotlib nella Sezione 5 di<br/> 
 <a href="http://raw.github.com/jrjohansson/scientific-python-lectures/master/Scientific-Computing-with-Python.pdf">Robert Johanson - Scientific Computing with Python</a><br/>
 Johanson utilizza lo stesso approccio "object oriented" che viene adottato in queste lezioni.</p>
 
@@ -14716,7 +14716,7 @@ alla variabile <code>ax</code>.</p>
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h3 id="Plot-di-una-lista-di--numeri.-Scatterplots">Plot di una lista di  numeri. Scatterplots<a class="anchor-link" href="#Plot-di-una-lista-di--numeri.-Scatterplots">&#182;</a></h3><p>Ciascuna linea nel grafico si genera con una chiamata al metodo <code>plot</code> applicato all'oggetto di tipo <code>AxesSubplot</code> restituito da <code>subplots</code>. Per disegnare set di punti si usa il metodo <code>scatter</code>.</p>
+<h2 id="8.2-Plot-di-una-lista-di--numeri.-Scatterplots">8.2 Plot di una lista di  numeri. Scatterplots<a class="anchor-link" href="#8.2-Plot-di-una-lista-di--numeri.-Scatterplots">&#182;</a></h2><p>Ciascuna linea nel grafico si genera con una chiamata al metodo <code>plot</code> applicato all'oggetto di tipo <code>AxesSubplot</code> restituito da <code>subplots</code>. Per disegnare set di punti si usa il metodo <code>scatter</code>.</p>
 
 </div>
 </div>
@@ -14779,7 +14779,7 @@ alla variabile <code>ax</code>.</p>
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h3 id="Titoli,-Nomi-degli-assi,-Colori,-LineStyle.">Titoli, Nomi degli assi, Colori, LineStyle.<a class="anchor-link" href="#Titoli,-Nomi-degli-assi,-Colori,-LineStyle.">&#182;</a></h3><p>Disegna punti (x,y). La prima lista contiene le coordinate x, la seconda le coordinate y.
+<h2 id="8.3-Titoli,-Nomi-degli-assi,-Colori,-LineStyle.">8.3 Titoli, Nomi degli assi, Colori, LineStyle.<a class="anchor-link" href="#8.3-Titoli,-Nomi-degli-assi,-Colori,-LineStyle.">&#182;</a></h2><p>Disegna punti (x,y). La prima lista contiene le coordinate x, la seconda le coordinate y.
 <code>marker</code> determina il simbolo usato per i punti. 'o' corrisponde a pallini. <code>c</code> oppure <code>color</code> determina il colore del simbolo. 'b' significa blue (red: 'r', green: 'g', nero: '0', ). <code>linestyle</code> determina il tipo di linea: per esempio <code>solid</code>, <code>dashed</code>, <code>dotted</code>, <code>dashdotted</code>. Nelle chiamate a <code>plot</code> di default non ci sono marker e i punti sono uniti da linee.<BR>
 I metodi <code>set_title</code>, <code>set_xlabel</code>, <code>set_ylabel</code> assegnano titoli al plot, all'asse delle ordinate, all'asse delle ascisse.</p>
 
@@ -14905,7 +14905,7 @@ I metodi <code>set_title</code>, <code>set_xlabel</code>, <code>set_ylabel</code
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h3 id="Fare-il-grafico-di-una-funzione-nota-f(x)">Fare il grafico di una funzione nota <code>f(x)</code><a class="anchor-link" href="#Fare-il-grafico-di-una-funzione-nota-f(x)">&#182;</a></h3><p>Il modo più semplice per fare il grafico di una funzione <code>f(x)</code>è:</p>
+<h2 id="8.4-Fare-il-grafico-di-una-funzione-nota-f(x)">8.4 Fare il grafico di una funzione nota <code>f(x)</code><a class="anchor-link" href="#8.4-Fare-il-grafico-di-una-funzione-nota-f(x)">&#182;</a></h2><p>Il modo più semplice per fare il grafico di una funzione <code>f(x)</code>è:</p>
 <ul>
 <li>Generare un set apportuno <code>xval</code> di ascisse in cui calcolare i valori di <code>f</code>, tipicamente usando <code>arange</code> o <code>linspace</code>.</li>
 <li>Scrivere una funzione che restituisca i valori <code>yval</code> di <code>f(x)</code> nei punti <code>xval</code>.</li>
@@ -14968,7 +14968,7 @@ I metodi <code>set_title</code>, <code>set_xlabel</code>, <code>set_ylabel</code
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h3 id="Curve-multiple-in-un-singolo-plot">Curve multiple in un singolo plot<a class="anchor-link" href="#Curve-multiple-in-un-singolo-plot">&#182;</a></h3>
+<h2 id="8.5-Plot-multipli">8.5 Plot multipli<a class="anchor-link" href="#8.5-Plot-multipli">&#182;</a></h2><h3 id="Curve-multiple-in-un-singolo-plot">Curve multiple in un singolo plot<a class="anchor-link" href="#Curve-multiple-in-un-singolo-plot">&#182;</a></h3>
 </div>
 </div>
 </div>
@@ -15000,7 +15000,7 @@ I metodi <code>set_title</code>, <code>set_xlabel</code>, <code>set_ylabel</code
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h3 id="Plot-multipli.">Plot multipli.<a class="anchor-link" href="#Plot-multipli.">&#182;</a></h3>
+<h3 id="Plot-multipli-in-una-sola-figura.">Plot multipli in una sola figura.<a class="anchor-link" href="#Plot-multipli-in-una-sola-figura.">&#182;</a></h3>
 </div>
 </div>
 </div>
@@ -15137,7 +15137,7 @@ I metodi <code>set_title</code>, <code>set_xlabel</code>, <code>set_ylabel</code
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h3 id="Salvare-una-figura-in-un-file">Salvare una figura in un file<a class="anchor-link" href="#Salvare-una-figura-in-un-file">&#182;</a></h3><p>L'estensione del file determina il formato in cui viene salvata la figura</p>
+<h2 id="8.6-Salvare-una-figura-in-un-file">8.6 Salvare una figura in un file<a class="anchor-link" href="#8.6-Salvare-una-figura-in-un-file">&#182;</a></h2><p>L'estensione del file determina il formato in cui viene salvata la figura</p>
 
 </div>
 </div>
@@ -15184,7 +15184,7 @@ I metodi <code>set_title</code>, <code>set_xlabel</code>, <code>set_ylabel</code
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h2 id="Plot-logaritmici">Plot logaritmici<a class="anchor-link" href="#Plot-logaritmici">&#182;</a></h2><p>Per avere una scala logaritmica sull'asse <code>x</code>, <code>y</code> si usano i metodi <code>set_xscale('log')</code>, <code>set_yscale('log')</code> sugli oggetti di tipo <code>AxesSubplot</code></p>
+<h2 id="8.7-Plot-logaritmici">8.7 Plot logaritmici<a class="anchor-link" href="#8.7-Plot-logaritmici">&#182;</a></h2><p>Per avere una scala logaritmica sull'asse <code>x</code>, <code>y</code> si usano i metodi <code>set_xscale('log')</code>, <code>set_yscale('log')</code> sugli oggetti di tipo <code>AxesSubplot</code></p>
 
 </div>
 </div>
@@ -15327,7 +15327,7 @@ I metodi <code>set_title</code>, <code>set_xlabel</code>, <code>set_ylabel</code
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h2 id="Istogrammi">Istogrammi<a class="anchor-link" href="#Istogrammi">&#182;</a></h2><p>I dati sono raggruppati in bin (contenitori, bidoni). L'altezza di ciascun bin corrisponde al numeri di dati che cadono fra i due valori della variabile che definiscono la base del bin. Cambiando il numero di bin e/o i loro estremi si cambia il plot.</p>
+<h2 id="8.8-Istogrammi">8.8 Istogrammi<a class="anchor-link" href="#8.8-Istogrammi">&#182;</a></h2><p>I dati sono raggruppati in bin (contenitori, bidoni). L'altezza di ciascun bin corrisponde al numeri di dati che cadono fra i due valori della variabile che definiscono la base del bin. Cambiando il numero di bin e/o i loro estremi si cambia il plot.</p>
 
 </div>
 </div>
@@ -15437,7 +15437,7 @@ I metodi <code>set_title</code>, <code>set_xlabel</code>, <code>set_ylabel</code
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h2 id="Altri-elementi-dei-plot">Altri elementi dei plot<a class="anchor-link" href="#Altri-elementi-dei-plot">&#182;</a></h2>
+<h2 id="8.9-Altri-elementi-dei-plot">8.9 Altri elementi dei plot<a class="anchor-link" href="#8.9-Altri-elementi-dei-plot">&#182;</a></h2>
 </div>
 </div>
 </div>
@@ -15701,7 +15701,7 @@ I metodi <code>set_title</code>, <code>set_xlabel</code>, <code>set_ylabel</code
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h3 id="Plot-parametrici">Plot parametrici<a class="anchor-link" href="#Plot-parametrici">&#182;</a></h3><p>Spesso per descrivere una curva esprimiamo le coordinate <code>y</code> dei punti sulla curva in funzione delle loro coordinate <code>x</code>. Per esempio una semicirconferenza centrata nell'origine è descritta dalla relazione $ y(x) = \sqrt{r^2 - x^2}$, dove $r$ è il raggio.<BR>
+<h2 id="8.10-Plot-parametrici">8.10 Plot parametrici<a class="anchor-link" href="#8.10-Plot-parametrici">&#182;</a></h2><p>Spesso per descrivere una curva esprimiamo le coordinate <code>y</code> dei punti sulla curva in funzione delle loro coordinate <code>x</code>. Per esempio una semicirconferenza centrata nell'origine è descritta dalla relazione $ y(x) = \sqrt{r^2 - x^2}$, dove $r$ è il raggio.<BR>
 Un modo alternativo di costruire i punti sul cerchio di raggio $r$ è di notare che possiamo usare come coordinata l'angolo del punto rispetto all'asse $\hat{x}$ come:
     $$ x(\theta) = r \cos\theta,\qquad y(\theta) = r \sin\theta$$
 Se creiamo due array sufficientemente fitti in questo modo, possiamo disegnare una circonferenza.</p>
