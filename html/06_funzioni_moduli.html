@@ -14579,7 +14579,17 @@ body[data-format='mobile'] .jp-OutputArea-child .jp-OutputArea-output {
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<H1 style="font-size:50px">6: Funzioni e moduli</H1><h2 id="6.1-Introduzione">6.1 Introduzione<a class="anchor-link" href="#6.1-Introduzione">&#182;</a></h2><p>Le funzioni ci permettono di raggruppare una sequenza di comandi in un blocco logico. Comunichiamo con una funzione attraverso una interfaccia ben definita, fornendo dei parametri, e ricevendo di ritorno delle informazioni. Generalmente non sappiamo esattamente come una funzione ottiene il valore che ci restituisce, conosciamo solo l'interfaccia.</p>
+<H1 style="font-size:50px">6: Funzioni e moduli</H1><div style = "width:95%; padding:5px 10px 5px;  margin:50px 0px 10px 10px; font-size:18px">
+<UL>
+    <LI> Come costruire funzioni
+    <LI> Come farsi restituire dei risultati da una funzione
+    <LI> Cosa sono i valori di default e i parametri opzionali
+    <LI> Come scrivere funzioni con un numero variabile di argomenti
+    <LI> Cosa sono e come utilizzare i moduli
+</UL>
+</div><hr>
+
+<h2 id="6.1-Introduzione">6.1 Introduzione<a class="anchor-link" href="#6.1-Introduzione">&#182;</a></h2><p>Le funzioni ci permettono di raggruppare una sequenza di comandi in un blocco logico. Comunichiamo con una funzione attraverso una interfaccia ben definita, fornendo dei parametri, e ricevendo di ritorno delle informazioni. Generalmente non sappiamo esattamente come una funzione ottiene il valore che ci restituisce, conosciamo solo l'interfaccia.</p>
 <p>Per esempio la funzione <code>math.sqrt</code>: non sappiamo esattamente come calcola la radice quadrata, ma conosciamo l'interfaccia: se passiamo il valore <em>x</em> alla funzione, ci restituisce (un valore approssimato per) $\sqrt{x}$.</p>
 <p>Questa astrazione è utile: è una tecnica comune dividere un sistema, un problema in componenti più piccole che funzionano insieme attraverso delle interfacce ben definite che non hanno bisogno di conoscere i dettagli di come ciascuna realizza il suo compito. In fatti, non doversi preoccupare dei dettagli di implementazione ci permette di avere una visione più chiara di un sistema composto di molte parti.</p>
 <p>Le funzioni costituiscono i mattoncini fondamentali all'interno di programmi più vasti e aiutano a tenere sotto controllo la complessità intrinseca dei problemi.</p>

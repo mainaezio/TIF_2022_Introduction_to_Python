@@ -14579,7 +14579,19 @@ body[data-format='mobile'] .jp-OutputArea-child .jp-OutputArea-output {
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<H1 style="font-size:50px">10: Metodi Numerici in Python (SciPy)</H1><h2 id="10.1-Nozioni-fondamentali">10.1 Nozioni fondamentali<a class="anchor-link" href="#10.1-Nozioni-fondamentali">&#182;</a></h2><p>La libreria scipy (SCIentific PYthon) fornisce un gran numero di algoritmi numerici. In questo notebook vengono presentati quelli di uso più comune che servono a calcolare integrali, trovare zeri, massimi e minimi di funzioni, risolvere equazioni differenziali e interpolare dati.<BR>
+<H1 style="font-size:50px">10: Metodi Numerici in Python (SciPy)</H1><div style = "width:95%; padding:5px 10px 5px;  margin:50px 0px 10px 10px; font-size:18px">
+<UL>
+    <LI> La libreria SciPy
+    <LI> Come calcolare numericamente un integrale definito
+    <LI> Come risolvere numericamente una equazione differenziale ordinaria
+    <LI> Come trovare numericamente gli zeri di una funzione
+    <LI> Come trovare il miglior fit di un set di dati
+    <LI> Come trovare numericamente massimi e minimi di una funzione
+</UL>
+</div><hr>
+
+
+<h2 id="10.1-Nozioni-fondamentali">10.1 Nozioni fondamentali<a class="anchor-link" href="#10.1-Nozioni-fondamentali">&#182;</a></h2><p>La libreria scipy (SCIentific PYthon) fornisce un gran numero di algoritmi numerici. In questo notebook vengono presentati quelli di uso più comune che servono a calcolare integrali, trovare zeri, massimi e minimi di funzioni, risolvere equazioni differenziali e interpolare dati.<BR>
 <code>Scipy</code> è basata su <code>numpy</code>. Nella <a href="https://docs.scipy.org/doc/scipy/reference/tutorial/general.html">documentazione di scipy</a> viene raccomandato di importare le due librerie separatamente.</p>
 
 </div>
@@ -16013,7 +16025,7 @@ Fate un plot dei dati e della curva ottenuta.
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h2 id="10.6-Ottimizzazione">10.6 Ottimizzazione<a class="anchor-link" href="#10.6-Ottimizzazione">&#182;</a></h2><p>Spesso è necessario trovare il massimo o il minimo di una particolare funzione <em>f(x)</em> dove <em>f</em> è una funzione scalare mentre <em>x</em> può essere un vettore. Applicazioni tipiche sono la minimizzazione di quantità come il costo, il rischio o l'errore, oppure la massimizzazione della produttività, efficienza o profitto. Le routines di ottimizzazione tipicamente forniscono un metodo per minimizzare una funzione data: per massimizzare <em>f(x)</em> è sufficiente minimizzare <em>g(x)= − f(x)</em>.</p>
+<h2 id="10.6-Ottimizzazione-ovvero-trovare-massimi-(e-minimi)">10.6 Ottimizzazione ovvero trovare massimi (e minimi)<a class="anchor-link" href="#10.6-Ottimizzazione-ovvero-trovare-massimi-(e-minimi)">&#182;</a></h2><p>Spesso è necessario trovare il massimo o il minimo di una particolare funzione <em>f(x)</em> dove <em>f</em> è una funzione scalare mentre <em>x</em> può essere un vettore. Applicazioni tipiche sono la minimizzazione di quantità come il costo, il rischio o l'errore, oppure la massimizzazione della produttività, efficienza o profitto. Le routines di ottimizzazione tipicamente forniscono un metodo per minimizzare una funzione data: per massimizzare <em>f(x)</em> è sufficiente minimizzare <em>g(x)= − f(x)</em>.</p>
 <p>Di seguito, un esempio che mostra (i) la definizione della funzione <em>f(x)</em> da massimizzare e (ii) la chiamata a <code>scipy.optimize.fmin</code> a cui vengono passati la funzione <em>f</em> da minimizzare e un valore iniziale <em>x</em><sub>0</sub> da cui partire per la ricerca del minimo, e che restituisce il valore <em>x</em> per cui <em>f(x)</em> ha un minimo locale. Tipicamente, la ricerca del minimo è locale, nel senso che l'algoritmo segue il gradiente (derivata multidimensionale) nel punto in cui si trova. Cerchiamo il minimo partendo da due punti diversi (<em>x</em><sub>0</sub> = 1.0 e <em>x</em><sub>0</sub> = 2.0, respectively) per dimostrare che, a seconda del punto di partenza, possiamo trovare minimi diversi della funzione <em>f</em>.</p>
 <p>La maggior parte dei comandi, dopo le due chiamate a <code>fmin</code>, generano il plot della funzione, mostrando i punti iniziali delle due ricerche e i minimi ottenuti:</p>
 
