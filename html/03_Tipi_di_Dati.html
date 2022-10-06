@@ -15585,7 +15585,7 @@ per avere una lista di frasi complete si potrebbe usare il punto "." come separa
     <h4> Imparare Facendo</h4>
 <OL>
 <LI>Trovate il numero di parole nella frase "Quel ramo del lago di Como, che volge a mezzogiorno, tra due catene non interrotte di monti" considerando solo gli spazi come separatori.
-<LI>Date le variabili <b>a = 37</b> e <b>a = '42'</b>, fate la somma di <b>a</b> e <b>b</b>
+<LI>Date le variabili <b>a = 37</b> e <b>b = '42'</b>, fate la somma di <b>a</b> e <b>b</b>
     <OL>
         <LI>come numeri interi.
         <LI>come stringhe.
@@ -17927,11 +17927,46 @@ I singoli oggetti in una lista/stringa/tuple possono essere indicati con il loro
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<p>La funzione <code>dict()</code> crea un dizionario vuoto.</p>
+<p>La funzione <code>dict()</code> crea un dizionario vuoto.<BR>
+Per eliminare una coppia key-value da un dizionario si può usare <code>del</code> passando la key come argomento:</p>
 
 </div>
 </div>
 </div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[&nbsp;]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+     <div class="CodeMirror cm-s-jupyter">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">dd</span> <span class="o">=</span> <span class="p">{</span><span class="s1">&#39;p&#39;</span><span class="p">:</span><span class="mi">4</span><span class="p">,</span> <span class="s1">&#39;q&#39;</span><span class="p">:</span><span class="mi">9</span><span class="p">,</span> <span class="s1">&#39;r&#39;</span><span class="p">:</span><span class="mi">16</span><span class="p">,</span> <span class="s1">&#39;s&#39;</span><span class="p">:</span><span class="mi">25</span><span class="p">}</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">dd</span><span class="p">)</span>
+</pre></div>
+
+     </div>
+</div>
+</div>
+</div>
+
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[&nbsp;]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+     <div class="CodeMirror cm-s-jupyter">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="k">del</span> <span class="n">dd</span><span class="p">[</span><span class="s1">&#39;r&#39;</span><span class="p">]</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">dd</span><span class="p">)</span>
+</pre></div>
+
+     </div>
+</div>
+</div>
+</div>
+
 </div>
 <div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
 <div class="jp-Cell-inputWrapper">
