@@ -15909,14 +15909,45 @@ $$x \leftarrow x + 1$$<p>Applichiamo la procedura a due passi all'espressione <c
     <span class="sd">&quot;&quot;&quot;Optional docstring.&quot;&quot;&quot;</span>
 
     <span class="c1"># Implementation of the function</span>
-    <span class="n">comando1</span>
+    <span class="n">comando1</span>                                <span class="c1"># Notate l&#39;indentazione di 4 spazi di tutti i comandi contenuti all&#39;interno della funzione</span>
     <span class="n">comando2</span>
 
-    <span class="k">return</span> <span class="n">result1</span><span class="p">,</span> <span class="n">result2</span> <span class="o">...</span>  <span class="c1"># optional                 # Notate l&#39;indentazione di 4 spazi</span>
+    <span class="k">return</span> <span class="n">result1</span><span class="p">,</span> <span class="n">result2</span> <span class="o">...</span>  <span class="c1"># optional                 </span>
 
 <span class="c1">#this is not part of the function</span>
 <span class="n">some_command</span>                                  <span class="c1"># Notate l&#39;assenza di indentazione</span>
 </pre></div>
+<ul>
+<li><p>La funzione inizia con la keyword <code>def</code>, seguita dal nome che assegnamo alla funzione, dalla lista, tra parentesi, degli argomenti che devono essere passati alla funzione quando questa viene eseguita e dal simbolo <code>:</code> che chiude la dichiarazione della funzione.</p>
+</li>
+<li><p>Tutto il corpo della funzione, l'insieme delle operazioni che devono essere eseguite sugli argomenti in input, devo essere indentati di quattro spazi rispetto alla keyword <code>def</code>.</p>
+</li>
+<li><p>È buona pratica inserire una <code>docstring</code>, fra tripli doppi apici(""") che spieghi cosa fa la funzione. La <code>docstring</code> può essere mostrata con 
+<code>help(nome_funzione)</code>.</p>
+</li>
+<li><p>In genere la funzione restituisce i risultati delle proprie operazioni al programma esterno attraverso la keyword <code>return</code></p>
+</li>
+<li><p>La definizione della funzione si conclude quando il codice smette di essere indentato.</p>
+</li>
+<li><p>Una funzione, una volta definita e messa in memoria eseguendo la cella, può essere chiamata più volte, anche con argomenti diversi.</p>
+</li>
+<li><p>Stampare un valore all'interno di una funzione non significa rendere disponibile il valore all'esterno della funzione. In particolare</p>
+<div class="highlight"><pre><span></span><span class="k">return</span> <span class="nb">print</span><span class="p">(</span><span class="n">a</span><span class="p">)</span>
+</pre></div>
+</li>
+</ul>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; stampa il valore della variabile <code>a</code> sullo schermo ma restituisce <code>None</code> (v. Sez "Un errore comune").</p>
+
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
 <p>Le parentesi dopo il nome della funzione sono necessarie. Se una funzione non ha argomenti si scrive:</p>
 <div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">my_function2</span><span class="p">():</span>
 </pre></div>
@@ -15966,6 +15997,11 @@ $$x \leftarrow x + 1$$<p>Applichiamo la procedura a due passi all'espressione <c
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">my_sum</span><span class="p">(</span><span class="n">a</span><span class="p">,</span><span class="n">b</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot; </span>
+<span class="sd">    my_sum calcola la somma di due valori.</span>
+<span class="sd">    a, b   : input</span>
+<span class="sd">    c      : output</span>
+<span class="sd">    &quot;&quot;&quot;</span>
     <span class="n">c</span> <span class="o">=</span> <span class="n">a</span><span class="o">+</span><span class="n">b</span>
     <span class="k">return</span> <span class="n">c</span>
 </pre></div>
@@ -16028,6 +16064,34 @@ $$x \leftarrow x + 1$$<p>Applichiamo la procedura a due passi all'espressione <c
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">f1</span> <span class="o">=</span> <span class="n">my_sum</span><span class="p">(</span><span class="mf">3.7</span><span class="p">,</span><span class="o">-</span><span class="mf">2.4</span><span class="p">)</span>
 <span class="n">f2</span> <span class="o">=</span> <span class="n">f1</span><span class="o">*</span><span class="n">f1</span>
 <span class="nb">print</span><span class="p">(</span><span class="n">f2</span><span class="p">)</span>
+</pre></div>
+
+     </div>
+</div>
+</div>
+</div>
+
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<p>La docstring fornisce informazioni sullo scopo della funzione. Si può richiamare con <code>help</code></p>
+
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[&nbsp;]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+     <div class="CodeMirror cm-s-jupyter">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">help</span><span class="p">(</span><span class="n">my_sum</span><span class="p">)</span>
 </pre></div>
 
      </div>
