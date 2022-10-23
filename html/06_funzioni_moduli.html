@@ -15439,7 +15439,7 @@ da <code>*en2_rest</code>. La variabile <code>en2_rest</code> (senza <code>*</co
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<p>L'operatore <code>**</code> può essere utilizzato anche per creare dizionari. Nell'esempio seguente creiamo un dizionario <code>voti0</code> e poi usiamo <code>**</code> per creare una copia indipendente (profonda) <code>voti1</code> di <code>voti0</code>:</p>
+<p>L'operatore <code>**</code> può essere utilizzato anche per creare o unire dizionari. Nell'esempio seguente creiamo un dizionario <code>voti0</code> e poi usiamo <code>**</code> per creare una copia indipendente (profonda) <code>voti1</code> di <code>voti0</code>:</p>
 
 </div>
 </div>
@@ -15471,6 +15471,124 @@ da <code>*en2_rest</code>. La variabile <code>en2_rest</code> (senza <code>*</co
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot; voti0 : </span><span class="si">{</span><span class="n">voti0</span><span class="si">}</span><span class="s2">,  voti1 : </span><span class="si">{</span><span class="n">voti1</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
 <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot; id(voti0) : </span><span class="si">{</span><span class="nb">id</span><span class="p">(</span><span class="n">voti0</span><span class="p">)</span><span class="si">}</span><span class="s2">,  id(voti1) : </span><span class="si">{</span><span class="nb">id</span><span class="p">(</span><span class="n">voti1</span><span class="p">)</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+</pre></div>
+
+     </div>
+</div>
+</div>
+</div>
+
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<p>Se uniamo due dizionari che non hanno chiavi in comune il risultato è la somma dei due risultati. Se ci sono chiavi in comune,
+i valori saranno quelli dell'ultimo dizionario. Un esempio per chiarire:</p>
+
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[&nbsp;]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+     <div class="CodeMirror cm-s-jupyter">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">d1</span> <span class="o">=</span> <span class="p">{</span><span class="s1">&#39;a&#39;</span><span class="p">:</span> <span class="mi">1</span><span class="p">,</span> <span class="s1">&#39;b&#39;</span><span class="p">:</span> <span class="mi">2</span><span class="p">}</span>
+<span class="n">d2</span> <span class="o">=</span> <span class="p">{</span><span class="s1">&#39;c&#39;</span><span class="p">:</span> <span class="mi">3</span><span class="p">,</span> <span class="s1">&#39;d&#39;</span><span class="p">:</span> <span class="mi">4</span><span class="p">}</span>
+<span class="n">d2a</span> <span class="o">=</span> <span class="p">{</span><span class="s1">&#39;b&#39;</span><span class="p">:</span> <span class="mi">20</span><span class="p">,</span> <span class="s1">&#39;c&#39;</span><span class="p">:</span> <span class="mi">3</span><span class="p">,</span> <span class="s1">&#39;d&#39;</span><span class="p">:</span><span class="mi">4</span><span class="p">}</span>
+</pre></div>
+
+     </div>
+</div>
+</div>
+</div>
+
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<p><code>d1</code> e <code>d2</code> non hanno chiavi comuni:</p>
+
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[&nbsp;]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+     <div class="CodeMirror cm-s-jupyter">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">d_unione1</span> <span class="o">=</span> <span class="p">{</span><span class="o">**</span><span class="n">d1</span><span class="p">,</span> <span class="o">**</span><span class="n">d2</span><span class="p">}</span>
+<span class="n">d_unione1</span>
+</pre></div>
+
+     </div>
+</div>
+</div>
+</div>
+
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<p><code>d1</code> e <code>d2a</code> hanno in comune la chiave <code>'b'</code>. Se uniamo <code>d2a</code> a <code>d1</code> la chiave <code>'b'</code>viene associata al suo valore in <code>d2a</code>.</p>
+
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[&nbsp;]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+     <div class="CodeMirror cm-s-jupyter">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">d_unione2</span> <span class="o">=</span> <span class="p">{</span><span class="o">**</span><span class="n">d1</span><span class="p">,</span> <span class="o">**</span><span class="n">d2a</span><span class="p">}</span>
+<span class="n">d_unione2</span>
+</pre></div>
+
+     </div>
+</div>
+</div>
+</div>
+
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<p>Se uniamo <code>d1</code> a <code>d2a</code> la chiave <code>'b'</code> viene associata al suo valore in <code>d1</code>.</p>
+
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[&nbsp;]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+     <div class="CodeMirror cm-s-jupyter">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">d_unione3</span> <span class="o">=</span> <span class="p">{</span> <span class="o">**</span><span class="n">d2a</span><span class="p">,</span> <span class="o">**</span><span class="n">d1</span><span class="p">}</span>
+<span class="n">d_unione3</span>
 </pre></div>
 
      </div>
