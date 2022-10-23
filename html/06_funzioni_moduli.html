@@ -14699,200 +14699,7 @@ body[data-format='mobile'] .jp-OutputArea-child .jp-OutputArea-output {
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<p>La terminologia di Allen Downey (nel suo libro <a href="http://www.greenteapress.com/thinkpython/html/index.html">Think Python</a>) di funzioni fruttuose e infruttuose distingue fra funzioni che ritornano un valore (=fruitful) e quelle che non lo fanno (=fruitless). Se una funzione non usa il comando <code>return</code>, diciamo che non ritorna nulla (mentre, in realtà ritorna sempre l'oggetto <code>None</code> – anche se il comando <code>return</code> manca).</p>
-<p>Per esempio, la funzione <code>greeting</code>, quando viene chiamata, stampa “Hello World” (ed è fruitless perché non ritorna alcun valore).</p>
-
-</div>
-</div>
-</div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
-<div class="jp-Cell-inputWrapper">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[&nbsp;]:</div>
-<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
-     <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">greeting</span><span class="p">():</span>
-    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Hello World!&quot;</span><span class="p">)</span>
-</pre></div>
-
-     </div>
-</div>
-</div>
-</div>
-
-</div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
-<div class="jp-Cell-inputWrapper">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<p>Se la chiamiamo:</p>
-
-</div>
-</div>
-</div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
-<div class="jp-Cell-inputWrapper">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[&nbsp;]:</div>
-<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
-     <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">greeting</span><span class="p">()</span>
-</pre></div>
-
-     </div>
-</div>
-</div>
-</div>
-
-</div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
-<div class="jp-Cell-inputWrapper">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<p>stampa “Hello World” su stdout (lo <em>standard output</em>, in questo caso la nostra finestra), come ci si aspetta. Se assegnamo il return value della funzione a una variabile <code>x</code>, la possiamo successivamente esaminare/utilizzare:</p>
-
-</div>
-</div>
-</div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
-<div class="jp-Cell-inputWrapper">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[&nbsp;]:</div>
-<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
-     <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">x</span> <span class="o">=</span> <span class="n">greeting</span><span class="p">()</span>
-</pre></div>
-
-     </div>
-</div>
-</div>
-</div>
-
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
-<div class="jp-Cell-inputWrapper">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[&nbsp;]:</div>
-<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
-     <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="n">x</span><span class="p">)</span>
-</pre></div>
-
-     </div>
-</div>
-</div>
-</div>
-
-</div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
-<div class="jp-Cell-inputWrapper">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<p>confermandondo che la funzione <code>greeting</code> ha effettivamente ritornato l'oggetto <code>None</code>.</p>
-
-</div>
-</div>
-</div>
-</div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
-<div class="jp-Cell-inputWrapper">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<p>In genere, funzioni che ritornano uno o più valori sono più utili perché possono essere combinate per costruire il codice (magari all'interno di un'altra funzione).</p>
-
-</div>
-</div>
-</div>
-</div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
-<div class="jp-Cell-inputWrapper">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<p>Possiamo definire funzioni con più argomenti:</p>
-
-</div>
-</div>
-</div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
-<div class="jp-Cell-inputWrapper">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[&nbsp;]:</div>
-<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
-     <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">math</span>
-
-<span class="k">def</span> <span class="nf">hypot</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">):</span>
-    <span class="k">return</span> <span class="n">math</span><span class="o">.</span><span class="n">sqrt</span><span class="p">(</span><span class="n">x</span> <span class="o">*</span> <span class="n">x</span> <span class="o">+</span> <span class="n">y</span> <span class="o">*</span> <span class="n">y</span><span class="p">)</span>
-</pre></div>
-
-     </div>
-</div>
-</div>
-</div>
-
-</div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
-<div class="jp-Cell-inputWrapper">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<p>È anche possibile ritornare più di un valore. Ecco un esempio di funzione che, data una stringa di input, la converte tutta in caratteri maiuscoli e tutta in caratteri minuscoli e ritorna le due versioni. La funzione è stata inserita in un programma esterno per mostrare come può essere chiamata:</p>
-
-</div>
-</div>
-</div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
-<div class="jp-Cell-inputWrapper">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[&nbsp;]:</div>
-<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
-     <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">upperAndLower</span><span class="p">(</span><span class="n">string</span><span class="p">):</span>
-    <span class="k">return</span> <span class="n">string</span><span class="o">.</span><span class="n">upper</span><span class="p">(),</span> <span class="n">string</span><span class="o">.</span><span class="n">lower</span><span class="p">()</span>
-
-<span class="n">testword</span> <span class="o">=</span> <span class="s1">&#39;Banana&#39;</span>
-
-<span class="n">uppercase</span><span class="p">,</span> <span class="n">lowercase</span> <span class="o">=</span> <span class="n">upperAndLower</span><span class="p">(</span><span class="n">testword</span><span class="p">)</span>
-
-<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;testword:&#39;</span><span class="p">,</span><span class="n">testword</span><span class="p">,</span> <span class="s1">&#39;       In lowercase:&#39;</span><span class="p">,</span> <span class="n">lowercase</span><span class="p">,</span>
-      <span class="s1">&#39;and in uppercase&#39;</span><span class="p">,</span> <span class="n">uppercase</span><span class="p">)</span>
-</pre></div>
-
-     </div>
-</div>
-</div>
-</div>
-
-</div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
-<div class="jp-Cell-inputWrapper">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<p>Possiamo definire più funzioni di Python in un singolo file e chiamare una funzione in una funzione diversa. Ecco un esempio:</p>
+<p>Possiamo definire più funzioni di Python in un singolo file e utilizzare una funzione all'interno di una funzione diversa. Ecco un esempio:</p>
 
 </div>
 </div>
@@ -14929,9 +14736,6 @@ body[data-format='mobile'] .jp-OutputArea-child .jp-OutputArea-output {
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h5 id="Informazioni-ulteriori">Informazioni ulteriori<a class="anchor-link" href="#Informazioni-ulteriori">&#182;</a></h5><ul>
-<li><a href="http://docs.python.org/tutorial/controlflow.html#defining-functions">Python Tutorial: Section 4.6 Defining Functions</a></li>
-</ul>
 <h2 id="6.2-Valori-di-default-e-parametri-opzionali">6.2 Valori di default e parametri opzionali<a class="anchor-link" href="#6.2-Valori-di-default-e-parametri-opzionali">&#182;</a></h2><p>Python permette di definire valori di <em>default</em> per gli argomenti di una funzione. Ecco un esempio: la funzione <code>myfunc</code> prende tre argomenti: <code>x</code>, <code>p</code> e <code>debug</code>. Il primo argomento <code>x</code> è una variabile “posizionale”; deve essere presente nella chiamata alla funzione. Il secondo argomento <code>p</code> ha il valore di default 2, il terzo <code>debug</code> ha come valore di default False. Questi argomenti sono opzionali: se l'utente chiama questa funzione con un solo argomento, l'argomento viene assegnato a <code>x</code> mentre <code>p</code> e <code>debug</code> assumeranno i valori di default. Se vengono forniti due argomenti (senza nome) il primo viene assegnato a <code>x</code> e il secondo a <code>p</code> mentre <code>debug</code> assumera il valore di default e così via. Il modo migliore di usare i parametri di default è quello di utilizzare espicitamente la keyword che li individua. In questo modo non è necessario ripettare l'ordine degli argomenti.</p>
 
 </div>
@@ -15121,7 +14925,7 @@ si ha un errore quando la funzione viene caricata in memoria:</p>
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h4 id="L'operatore-di-impacchettamento/spacchettamento-*-per-sequenze">L'operatore di impacchettamento/spacchettamento <code>*</code> per sequenze<a class="anchor-link" href="#L'operatore-di-impacchettamento/spacchettamento-*-per-sequenze">&#182;</a></h4><p>L'operatore <code>*</code> applicato ad un iterabile trasforma il singolo iterabile nella successione ordinata dei suoi elementi.</p>
+<p>Abbiamo visto che in Python possiamo accedere agli elementi di un oggetto iterabile (lista, ntupla, stringa, ...) attraverso gli indici:</p>
 
 </div>
 </div>
@@ -15134,12 +14938,7 @@ si ha un errore quando la funzione viene caricata in memoria:</p>
 <div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[&nbsp;]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">li</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">]</span>
-<span class="n">en</span> <span class="o">=</span> <span class="p">(</span><span class="mi">3</span><span class="p">,</span><span class="mi">4</span><span class="p">)</span>
-<span class="n">st</span> <span class="o">=</span> <span class="s1">&#39;abc&#39;</span>
-<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;li:&#39;</span><span class="p">,</span><span class="n">li</span><span class="p">,</span><span class="s1">&#39;   *li:&#39;</span><span class="p">,</span><span class="o">*</span><span class="n">li</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;en:&#39;</span><span class="p">,</span><span class="n">en</span><span class="p">,</span><span class="s1">&#39;   *en:&#39;</span><span class="p">,</span><span class="o">*</span><span class="n">en</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;st:&#39;</span><span class="p">,</span><span class="n">st</span><span class="p">,</span><span class="s1">&#39;   *st:&#39;</span><span class="p">,</span><span class="o">*</span><span class="n">st</span><span class="p">)</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">en</span> <span class="o">=</span> <span class="p">(</span><span class="mi">3</span><span class="p">,</span><span class="mi">4</span><span class="p">,</span><span class="mi">5</span><span class="p">,</span><span class="mi">6</span><span class="p">,</span><span class="mi">7</span><span class="p">,</span><span class="mi">8</span><span class="p">)</span>
 </pre></div>
 
      </div>
@@ -15155,7 +14954,7 @@ si ha un errore quando la funzione viene caricata in memoria:</p>
 <div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[&nbsp;]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span> 
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">en</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
 </pre></div>
 
      </div>
@@ -15163,19 +14962,6 @@ si ha un errore quando la funzione viene caricata in memoria:</p>
 </div>
 </div>
 
-</div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
-<div class="jp-Cell-inputWrapper">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h4 id="Assegnazione-a-pi%C3%B9-variabili-singole">Assegnazione a pi&#249; variabili singole<a class="anchor-link" href="#Assegnazione-a-pi%C3%B9-variabili-singole">&#182;</a></h4><p>In Python possiamo assegnare il valore a più variabili estraendole da un iterabile con un solo comando,
-purchè il numero di variabili corrisponda al numero di elementi dell'iterabile.</p>
-
-</div>
-</div>
-</div>
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
@@ -15184,8 +14970,7 @@ purchè il numero di variabili corrisponda al numero di elementi dell'iterabile.
 <div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[&nbsp;]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">l1</span><span class="p">,</span><span class="n">l2</span> <span class="o">=</span> <span class="n">li</span>     <span class="c1"># in questa forma il numero di variabili a sinistra dell&#39;uguale deve pari a len(li)</span>
-<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;l1:&#39;</span><span class="p">,</span><span class="n">l1</span><span class="p">,</span><span class="s1">&#39;  l2:&#39;</span><span class="p">,</span><span class="n">l2</span><span class="p">)</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">en</span><span class="p">[</span><span class="mi">1</span><span class="p">:</span><span class="mi">4</span><span class="p">]</span>
 </pre></div>
 
      </div>
@@ -15193,20 +14978,6 @@ purchè il numero di variabili corrisponda al numero di elementi dell'iterabile.
 </div>
 </div>
 
-</div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
-<div class="jp-Cell-inputWrapper">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<p>L'operatore <code>*</code> ci permette di essere flessibili, definendo un oggetto con un numero variabile di elementi.<BR>
-Nell'esempio seguente <code>en2_1</code> e <code>en2_2</code> catturano i primi due elementi della lista. Tutti gli altri elementi vengono catturati
-da <code>*en2_rest</code>. La variabile <code>en2_rest</code> (senza <code>*</code>) contiene la lista degli elementi dall'indice 2 in poi.</p>
-
-</div>
-</div>
-</div>
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
@@ -15215,11 +14986,7 @@ da <code>*en2_rest</code>. La variabile <code>en2_rest</code> (senza <code>*</co
 <div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[&nbsp;]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">en2</span> <span class="o">=</span> <span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">,</span><span class="mi">4</span><span class="p">,</span><span class="mi">5</span><span class="p">)</span>
-<span class="n">en2_1</span><span class="p">,</span> <span class="n">en2_2</span><span class="p">,</span> <span class="o">*</span><span class="n">en2_rest</span> <span class="o">=</span> <span class="n">en2</span> <span class="c1"># en2_rest attraverso l&#39;operatore di impacchettamento `*` cattura tutti gli elementi rimenenti</span>
-                              <span class="c1"># qualunque sia il loro numero</span>
-<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;en2_1:&#39;</span><span class="p">,</span><span class="n">en2_1</span><span class="p">,</span><span class="s1">&#39;en2_2:&#39;</span><span class="p">,</span><span class="n">en2_2</span><span class="p">,</span><span class="s1">&#39;en2_rest:&#39;</span><span class="p">,</span><span class="n">en2_rest</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="nb">type</span><span class="p">(</span><span class="n">en2_rest</span><span class="p">))</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">en</span><span class="p">[</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span>
 </pre></div>
 
      </div>
@@ -15234,7 +15001,205 @@ da <code>*en2_rest</code>. La variabile <code>en2_rest</code> (senza <code>*</co
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h4 id="Esempi-di-impacchettamento">Esempi di impacchettamento<a class="anchor-link" href="#Esempi-di-impacchettamento">&#182;</a></h4><p>Una funzione che usa l'impacchettamento per sommare su un numero arbitrario di argomenti:</p>
+<p>Possiamo anche assegnare gli elementi di un iterabile a variabili singole, operazione che si chiama spacchettamento,
+purchè il numero di variabili corrisponda al numero di elementi dell'iterabile:</p>
+
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[&nbsp;]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+     <div class="CodeMirror cm-s-jupyter">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">a</span><span class="p">,</span><span class="n">b</span><span class="p">,</span><span class="n">c</span><span class="p">,</span><span class="n">d</span><span class="p">,</span><span class="n">e</span><span class="p">,</span><span class="n">f</span> <span class="o">=</span> <span class="n">en</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;c:</span><span class="si">{</span><span class="n">c</span><span class="si">}</span><span class="s2">, a:</span><span class="si">{</span><span class="n">a</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+</pre></div>
+
+     </div>
+</div>
+</div>
+</div>
+
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<h4 id="L'operatore-di-impacchettamento/spacchettamento-*-per-sequenze">L'operatore di impacchettamento/spacchettamento <code>*</code> per sequenze<a class="anchor-link" href="#L'operatore-di-impacchettamento/spacchettamento-*-per-sequenze">&#182;</a></h4><p>L'operatore <code>*</code> ci permette di essere flessibili, definendo un oggetto con un numero variabile di elementi.<BR>
+Nell'esempio seguente <code>en_1</code> e <code>en_2</code> catturano i primi due elementi della lista. <code>en_last</code> cattura l'ultimo elemento.
+Tutti gli altri elementi, qualunque sia il loro numero, vengono catturati
+da <code>*en2_rest</code>. La variabile <code>en2_rest</code> (senza <code>*</code>) contiene la lista degli elementi dall'indice 2 a len(en)-1.</p>
+
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[&nbsp;]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+     <div class="CodeMirror cm-s-jupyter">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">en_1</span><span class="p">,</span> <span class="n">en_2</span><span class="p">,</span> <span class="o">*</span><span class="n">en_rest</span><span class="p">,</span> <span class="n">en_last</span> <span class="o">=</span> <span class="n">en</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;en_1:</span><span class="si">{</span><span class="n">en_1</span><span class="si">}</span><span class="s2">, en_2:</span><span class="si">{</span><span class="n">en_2</span><span class="si">}</span><span class="s2">, en_last:</span><span class="si">{</span><span class="n">en_last</span><span class="si">}</span><span class="s2">, en_rest:</span><span class="si">{</span><span class="n">en_rest</span><span class="si">}</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Il tipo di en_rest è </span><span class="si">{</span><span class="nb">type</span><span class="p">(</span><span class="n">en_rest</span><span class="p">)</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+</pre></div>
+
+     </div>
+</div>
+</div>
+</div>
+
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<p>Questa notazione funziona anche se non ci sono elementi da spacchettare:</p>
+
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[&nbsp;]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+     <div class="CodeMirror cm-s-jupyter">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">a</span><span class="p">,</span><span class="o">*</span><span class="n">b</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">]</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;a = </span><span class="si">{</span><span class="n">a</span><span class="si">}</span><span class="s2">, b = </span><span class="si">{</span><span class="n">b</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+</pre></div>
+
+     </div>
+</div>
+</div>
+</div>
+
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<p>L'operatore di impacchettamento/spacchettamento <code>*</code> permette di costruire funzioni con un numero indefinito di argomenti usando la notazione:</p>
+<div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">my_function</span><span class="p">(</span><span class="o">*</span><span class="n">args</span><span class="p">):</span>
+</pre></div>
+<p>Tradizionalmente si usa il nome <code>args</code>, ma come sempre i nomi degli argomenti di una funzione può essere qualunque.</p>
+
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[&nbsp;]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+     <div class="CodeMirror cm-s-jupyter">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Definire una funzione con *args</span>
+<span class="k">def</span> <span class="nf">show_countries</span><span class="p">(</span><span class="o">*</span><span class="n">args</span><span class="p">):</span>
+    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;The args type: </span><span class="si">{</span><span class="nb">type</span><span class="p">(</span><span class="n">args</span><span class="p">)</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+    <span class="k">for</span> <span class="n">item</span> <span class="ow">in</span> <span class="n">args</span><span class="p">:</span>
+        <span class="nb">print</span><span class="p">(</span><span class="n">item</span><span class="p">)</span>
+</pre></div>
+
+     </div>
+</div>
+</div>
+</div>
+
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[&nbsp;]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+     <div class="CodeMirror cm-s-jupyter">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Chiamata alla funzione con due argomenti </span>
+<span class="n">show_countries</span><span class="p">(</span><span class="s1">&#39;America&#39;</span><span class="p">,</span> <span class="s1">&#39;Canada&#39;</span><span class="p">)</span>
+</pre></div>
+
+     </div>
+</div>
+</div>
+</div>
+
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[&nbsp;]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+     <div class="CodeMirror cm-s-jupyter">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Chiamata alla funzione con tre argomenti </span>
+<span class="n">show_countries</span><span class="p">(</span><span class="s1">&#39;America&#39;</span><span class="p">,</span> <span class="s1">&#39;Canada&#39;</span><span class="p">,</span> <span class="s1">&#39;Mexico&#39;</span><span class="p">)</span>
+</pre></div>
+
+     </div>
+</div>
+</div>
+</div>
+
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[&nbsp;]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+     <div class="CodeMirror cm-s-jupyter">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Usando una ntupla senza unpacking. Stiamo passando un solo argomento</span>
+<span class="n">inp</span> <span class="o">=</span> <span class="p">(</span><span class="s1">&#39;America&#39;</span><span class="p">,</span> <span class="s1">&#39;Canada&#39;</span><span class="p">)</span>
+<span class="n">show_countries</span><span class="p">(</span><span class="n">inp</span><span class="p">)</span>
+</pre></div>
+
+     </div>
+</div>
+</div>
+</div>
+
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[&nbsp;]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+     <div class="CodeMirror cm-s-jupyter">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Usando una tuple spacchettandola con *</span>
+<span class="n">inp</span> <span class="o">=</span> <span class="p">(</span><span class="s1">&#39;America&#39;</span><span class="p">,</span> <span class="s1">&#39;Canada&#39;</span><span class="p">)</span>
+<span class="n">show_countries</span><span class="p">(</span><span class="o">*</span><span class="n">inp</span><span class="p">)</span>
+</pre></div>
+
+     </div>
+</div>
+</div>
+</div>
+
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<h4 id="Esempi">Esempi<a class="anchor-link" href="#Esempi">&#182;</a></h4><p>Una funzione che usa l'impacchettamento per sommare su un numero arbitrario di argomenti:</p>
 
 </div>
 </div>
@@ -15267,7 +15232,7 @@ da <code>*en2_rest</code>. La variabile <code>en2_rest</code> (senza <code>*</co
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<p>Una funzione che usa sia l'impacchettamento che lo spacchettamento:</p>
+<p>L'operatore <code>*</code> si può utilizzare nella chiamata a una funzione con numero fisso di argomenti purchè questa operazione produca il numero corretto di argomenti:</p>
 
 </div>
 </div>
@@ -15284,22 +15249,11 @@ da <code>*en2_rest</code>. La variabile <code>en2_rest</code> (senza <code>*</co
 <span class="k">def</span> <span class="nf">fun1</span><span class="p">(</span><span class="n">a</span><span class="p">,</span> <span class="n">b</span><span class="p">,</span> <span class="n">c</span><span class="p">):</span>
 	<span class="nb">print</span><span class="p">(</span><span class="n">a</span><span class="p">,</span> <span class="n">b</span><span class="p">,</span> <span class="n">c</span><span class="p">)</span>
 
-<span class="c1"># Un&#39;altra funzione che prende un numero arbitrario di argomenti impacchettati nella tuple *args.</span>
-<span class="k">def</span> <span class="nf">fun2</span><span class="p">(</span><span class="o">*</span><span class="n">args</span><span class="p">):</span>
+<span class="c1"># arg_list viene spacchettato (in questo caso deve contenere esattamente tre elementi)</span>
+<span class="c1"># e il suo contenuto viene passato a fun1</span>
+<span class="n">arg_list</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;Hello&#39;</span><span class="p">,</span> <span class="s1">&#39;beautiful&#39;</span><span class="p">,</span> <span class="s1">&#39;world!&#39;</span><span class="p">]</span>
 
-	<span class="c1"># La tuple args viene convertita in lista per poterne modificare gli elementi</span>
-	<span class="n">args</span> <span class="o">=</span> <span class="nb">list</span><span class="p">(</span><span class="n">args</span><span class="p">)</span>
-
-	<span class="c1"># Gli elementi vengono modificati</span>
-	<span class="n">args</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">=</span> <span class="s1">&#39;Greetings,&#39;</span>
-	<span class="n">args</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span> <span class="o">=</span> <span class="s1">&#39;awesome&#39;</span>
-
-	<span class="c1"># args viene spacchettato (in questo caso deve contenere esattamente tre elementi)</span>
-    <span class="c1"># e il suo contenuto viene passato a fun1</span>
-	<span class="n">fun1</span><span class="p">(</span><span class="o">*</span><span class="n">args</span><span class="p">)</span>
-
-<span class="c1"># Chiamata</span>
-<span class="n">fun2</span><span class="p">(</span><span class="s1">&#39;Hello&#39;</span><span class="p">,</span> <span class="s1">&#39;beautiful&#39;</span><span class="p">,</span> <span class="s1">&#39;world!&#39;</span><span class="p">)</span>
+<span class="n">fun1</span><span class="p">(</span><span class="o">*</span><span class="n">arg_list</span><span class="p">)</span>
 </pre></div>
 
      </div>
@@ -15314,7 +15268,8 @@ da <code>*en2_rest</code>. La variabile <code>en2_rest</code> (senza <code>*</co
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h4 id="Esiste-una-funzione-di-impacchettamento/spacchettamento,-**,-anche-per-dizionari">Esiste una funzione di impacchettamento/spacchettamento, <code>**</code>, anche per dizionari<a class="anchor-link" href="#Esiste-una-funzione-di-impacchettamento/spacchettamento,-**,-anche-per-dizionari">&#182;</a></h4>
+<p>Un'altra funzione che prende un numero arbitrario di argomenti impacchettati nella tuple *args.</p>
+
 </div>
 </div>
 </div>
@@ -15326,14 +15281,179 @@ da <code>*en2_rest</code>. La variabile <code>en2_rest</code> (senza <code>*</co
 <div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[&nbsp;]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Una funzione che prende un numero arbitrario di argomenti con nome ricavate dallo spacchettamento con ** di un dizionario</span>
-<span class="c1"># le cui `keyword` devono essere stringhe</span>
-<span class="k">def</span> <span class="nf">fun</span><span class="p">(</span><span class="n">a</span><span class="p">,</span> <span class="n">b</span><span class="p">,</span> <span class="n">c</span><span class="p">):</span>
-	<span class="nb">print</span><span class="p">(</span><span class="n">a</span><span class="p">,</span> <span class="n">b</span><span class="p">,</span> <span class="n">c</span><span class="p">)</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">fun2</span><span class="p">(</span><span class="o">*</span><span class="n">args</span><span class="p">):</span>
+    <span class="c1"># La tuple args viene convertita in lista per poterne modificare gli elementi</span>
+    <span class="n">args</span> <span class="o">=</span> <span class="nb">list</span><span class="p">(</span><span class="n">args</span><span class="p">)</span>
+	<span class="c1"># Gli elementi vengono modificati. Devono essere presenti almeno due elementi</span>
+    <span class="n">args</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">=</span> <span class="s1">&#39;Greetings,&#39;</span>
+    <span class="n">args</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span> <span class="o">=</span> <span class="s1">&#39;awesome&#39;</span>
+    <span class="k">return</span> <span class="n">args</span>
+ 
+<span class="n">output</span> <span class="o">=</span> <span class="n">fun2</span><span class="p">(</span><span class="s1">&#39;Hello&#39;</span><span class="p">,</span> <span class="s1">&#39;beautiful&#39;</span><span class="p">,</span> <span class="s1">&#39;world!&#39;</span><span class="p">,</span> <span class="s1">&#39;Today&#39;</span><span class="p">,</span><span class="s1">&#39;is&#39;</span><span class="p">,</span> <span class="s1">&#39;gorgeous.&#39;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">output</span><span class="p">)</span>
+</pre></div>
 
-<span class="c1"># Chiamata</span>
-<span class="n">d</span> <span class="o">=</span> <span class="p">{</span><span class="s1">&#39;a&#39;</span><span class="p">:</span><span class="mi">2</span><span class="p">,</span> <span class="s1">&#39;b&#39;</span><span class="p">:</span><span class="mi">4</span><span class="p">,</span> <span class="s1">&#39;c&#39;</span><span class="p">:</span><span class="mi">10</span><span class="p">}</span>
-<span class="n">fun</span><span class="p">(</span><span class="o">**</span><span class="n">d</span><span class="p">)</span>
+     </div>
+</div>
+</div>
+</div>
+
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<h4 id="L'operatore-di-impacchettamento/spacchettamento,-**,-per-argomenti-con-nome-e-dizionari">L'operatore di impacchettamento/spacchettamento, <code>**</code>, per argomenti con nome e dizionari<a class="anchor-link" href="#L'operatore-di-impacchettamento/spacchettamento,-**,-per-argomenti-con-nome-e-dizionari">&#182;</a></h4>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<p>L'operatore di impacchettamento/spacchettamento <code>**</code> permette di costruire funzioni con un numero indefinito di argomenti con nome usando la notazione:</p>
+<div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">my_function</span><span class="p">(</span><span class="o">**</span><span class="n">kwargs</span><span class="p">):</span>
+</pre></div>
+<p>Il nome <code>kwargs</code> è puramente tradizionale.</p>
+
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[&nbsp;]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+     <div class="CodeMirror cm-s-jupyter">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Un esempio in cui un gruppo di argomenti con nome viene impacchettato in un dizionario usando **</span>
+<span class="k">def</span> <span class="nf">fun</span><span class="p">(</span><span class="o">**</span><span class="n">kwargs</span><span class="p">):</span>
+    <span class="c1"># kwargs is a dict</span>
+    <span class="nb">print</span><span class="p">(</span><span class="nb">type</span><span class="p">(</span><span class="n">kwargs</span><span class="p">))</span>
+    <span class="c1"># Printing dictionary items</span>
+    <span class="k">for</span> <span class="n">key</span> <span class="ow">in</span> <span class="n">kwargs</span><span class="p">:</span>
+        <span class="n">val</span> <span class="o">=</span> <span class="n">kwargs</span><span class="p">[</span><span class="n">key</span><span class="p">]</span>
+        <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="n">key</span><span class="si">}</span><span class="s2"> = </span><span class="si">{</span><span class="n">val</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+</pre></div>
+
+     </div>
+</div>
+</div>
+</div>
+
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<p>Chiamata a <code>fun</code> con un argomento:</p>
+
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[&nbsp;]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+     <div class="CodeMirror cm-s-jupyter">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">fun</span><span class="p">(</span><span class="n">language</span><span class="o">=</span><span class="s2">&quot;Python&quot;</span><span class="p">)</span>
+</pre></div>
+
+     </div>
+</div>
+</div>
+</div>
+
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<p>Chiamata a <code>fun</code> con tre argomenti:</p>
+
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[&nbsp;]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+     <div class="CodeMirror cm-s-jupyter">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">fun</span><span class="p">(</span><span class="n">name</span><span class="o">=</span><span class="s2">&quot;geeks&quot;</span><span class="p">,</span> <span class="n">ID</span><span class="o">=</span><span class="s2">&quot;101&quot;</span><span class="p">,</span> <span class="n">language</span><span class="o">=</span><span class="s2">&quot;Python&quot;</span><span class="p">)</span>
+</pre></div>
+
+     </div>
+</div>
+</div>
+</div>
+
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<p>Oppure:</p>
+
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[&nbsp;]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+     <div class="CodeMirror cm-s-jupyter">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">my_kwargs</span> <span class="o">=</span> <span class="nb">dict</span><span class="p">(</span><span class="n">name</span><span class="o">=</span><span class="s2">&quot;geeks&quot;</span><span class="p">,</span> <span class="n">ID</span><span class="o">=</span><span class="s2">&quot;101&quot;</span><span class="p">,</span> <span class="n">language</span><span class="o">=</span><span class="s2">&quot;Python&quot;</span><span class="p">)</span>
+<span class="n">fun</span><span class="p">(</span><span class="o">**</span><span class="n">my_kwargs</span><span class="p">)</span>
+</pre></div>
+
+     </div>
+</div>
+</div>
+</div>
+
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<p>L'operatore <code>**</code> può essere utilizzato anche per creare dizionari. Nell'esempio seguente creiamo un dizionario <code>voti0</code> e poi usiamo <code>**</code> per creare una copia indipendente (profonda) <code>voti1</code> di <code>voti0</code>:</p>
+
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[&nbsp;]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+     <div class="CodeMirror cm-s-jupyter">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">voti0</span> <span class="o">=</span> <span class="p">{</span><span class="s1">&#39;Chiara&#39;</span><span class="p">:</span><span class="mi">29</span><span class="p">,</span> <span class="s1">&#39;Roberto&#39;</span><span class="p">:</span><span class="mi">24</span><span class="p">}</span>
+<span class="n">voti1</span> <span class="o">=</span> <span class="p">{</span><span class="o">**</span><span class="n">voti0</span><span class="p">}</span>
 </pre></div>
 
      </div>
@@ -15349,19 +15469,8 @@ da <code>*en2_rest</code>. La variabile <code>en2_rest</code> (senza <code>*</co
 <div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[&nbsp;]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Un esempio in cui un gruppo di argomenti con nome viene impacchettato in un dizionario usando **</span>
-<span class="k">def</span> <span class="nf">fun</span><span class="p">(</span><span class="o">**</span><span class="n">kwargs</span><span class="p">):</span>
-    
-    <span class="c1"># kwargs is a dict</span>
-    <span class="nb">print</span><span class="p">(</span><span class="nb">type</span><span class="p">(</span><span class="n">kwargs</span><span class="p">))</span>
-
-    <span class="c1"># Printing dictionary items</span>
-    <span class="k">for</span> <span class="n">key</span> <span class="ow">in</span> <span class="n">kwargs</span><span class="p">:</span>
-        <span class="n">val</span> <span class="o">=</span> <span class="n">kwargs</span><span class="p">[</span><span class="n">key</span><span class="p">]</span>
-        <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="n">key</span><span class="si">}</span><span class="s2"> = </span><span class="si">{</span><span class="n">val</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
-
-<span class="c1"># Chiamata</span>
-<span class="n">fun</span><span class="p">(</span><span class="n">name</span><span class="o">=</span><span class="s2">&quot;geeks&quot;</span><span class="p">,</span> <span class="n">ID</span><span class="o">=</span><span class="s2">&quot;101&quot;</span><span class="p">,</span> <span class="n">language</span><span class="o">=</span><span class="s2">&quot;Python&quot;</span><span class="p">)</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot; voti0 : </span><span class="si">{</span><span class="n">voti0</span><span class="si">}</span><span class="s2">,  voti1 : </span><span class="si">{</span><span class="n">voti1</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot; id(voti0) : </span><span class="si">{</span><span class="nb">id</span><span class="p">(</span><span class="n">voti0</span><span class="p">)</span><span class="si">}</span><span class="s2">,  id(voti1) : </span><span class="si">{</span><span class="nb">id</span><span class="p">(</span><span class="n">voti1</span><span class="p">)</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
 </pre></div>
 
      </div>
@@ -15428,7 +15537,7 @@ da <code>*en2_rest</code>. La variabile <code>en2_rest</code> (senza <code>*</co
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h2 id="6.4-Cosa-succeede-quando-si-passano-argomenti-a-una-funzione-in-Python">6.4 Cosa succeede quando si passano argomenti a una funzione in Python<a class="anchor-link" href="#6.4-Cosa-succeede-quando-si-passano-argomenti-a-una-funzione-in-Python">&#182;</a></h2><p>In Python, gli oggetti sono passati per referenza (tipo pointer) all'oggetto. A seconda di come la referenza viene usate nella funzione e del tipo di oggetto che viene referenziato, questo può significare che qualsiasi cambiamento all'oggetto passato, all'interno della funzione, si riflette immediatamente all'esterno.</p>
+<h2 id="6.4-Cosa-succeede-quando-si-passano-argomenti-a-una-funzione-in-Python">6.4 Cosa succeede quando si passano argomenti a una funzione in Python<a class="anchor-link" href="#6.4-Cosa-succeede-quando-si-passano-argomenti-a-una-funzione-in-Python">&#182;</a></h2><p>In Python, gli oggetti sono passati per referenza (tipo pointer) all'oggetto. A seconda di come la referenza viene usate nella funzione e del tipo di oggetto che viene referenziato, questo può significare che qualsiasi modifica, all'interno della funzione, dell'oggetto passato si riflette immediatamente all'esterno.</p>
 <p>Tre esempi per chiarire. Iniziamo passando una lista a una funzione che itera sugli elementi della sequenza raddoppiando il valore di ciascuno:</p>
 
 </div>
@@ -15466,7 +15575,7 @@ da <code>*en2_rest</code>. La variabile <code>en2_rest</code> (senza <code>*</co
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<p>La variabile <code>l</code> è una referenza all'oggetto lista. La linea <code>l[i] = l[i] * 2</code> calcola il membro di destra leggendo l'elemento di indice <code>i</code>e poi moltiplicandolo per due. Una referenza a questo nuovo oggetto viene immagazzinata
+<p>Quando la funzione viene chiamata con argomento <code>pippo</code>, le viene passata una referenza all'oggetto <code>pippo</code> che deve essere definito all'esterno della funzione. <code>l</code> diventa sinonimo di <code>pippo</code>. La linea <code>l[i] = l[i] * 2</code> calcola il membro di destra leggendo l'elemento di indice <code>i</code>e poi moltiplicandolo per due. Una referenza a questo nuovo oggetto viene immagazzinata
 nell'oggetto lista <code>l</code> alla posizione di indice <code>i</code>. È stato quindi modificato l'oggestto lista, che è referenziato attraverso il nome <code>l</code>.</p>
 <p>La referenza all'oggetto lista non cambia mai: la linea <code>l[i] = l[i] * 2</code> cambia l'elemento <code>l[i]</code> della lista <code>l</code> ma non cambia mai la referenza <code>l</code> per la lista. Quindi sia la funzione che il programma che la chiama operano sullo stesso oggetto, rispettivamente attraverso la referenza <code>l</code> e <code>global_l</code>.</p>
 <p>Al contrario, nell'esempio seguente la lista globale non viene modificata
